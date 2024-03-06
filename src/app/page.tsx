@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Intro from "@/components/Intro";
 import Logo from "@/components/Logo";
 import Navbar from "@/components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
       </header>
       <main>
         <Intro />
+        <About />
       </main>
       <footer></footer>
     </>
