@@ -13,7 +13,7 @@ export const timelines = [
     type: "WorkExperience",
     name: "Virtual Zoom s.r.o",
     description: "front-end software developer",
-    aquiredSkills: ["Javascript", "Php", "TypeScript"],
+    aquiredSkills: ["Javascript", "PHP", "TypeScript"],
     time: 2022,
   },
   {
@@ -27,10 +27,10 @@ export const timelines = [
 
   {
     id: 2,
-    type: "education",
+    type: "Education",
     name: "Metropolitan university Prague",
     description: "International business",
-    aquiredSkills: ["team player", "manage pressure", "public relations"],
+    aquiredSkills: ["teamwork", "public relations"],
     time: 2015,
   },
 ];
