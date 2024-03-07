@@ -1,16 +1,16 @@
 import About from "@/components/About";
 import Intro from "@/components/Intro";
 import Logo from "@/components/Logo";
+
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between items-center w-full border-b-accent border p-6 flex-wrap">
-        <Logo />
+      <header className="relative w-full">
         <Navbar />
       </header>
-      <main>
+      <main className="max-w-screen-xl p-4 md:p-8 lg:p-12 m-auto">
         <Intro />
         <About />
       </main>
