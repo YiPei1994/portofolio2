@@ -5,33 +5,34 @@ import { ImUser } from "react-icons/im";
 import { ImCogs } from "react-icons/im";
 import { ImEmbed2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const navItems = [
     {
       name: "Home",
-      link: "#intro",
-      icon: <ImHome3 className="text-3xl text-primary mr-4" />,
+      link: "/home#intro",
+      icon: <ImHome3 className="text-3xl  mr-4" />,
     },
     {
       name: "About",
-      link: "#about",
-      icon: <ImUser className="text-3xl text-primary mr-4" />,
+      link: "/home#about",
+      icon: <ImUser className="text-3xl  mr-4" />,
     },
     {
       name: "Skills",
-      link: "#skills",
-      icon: <ImCogs className="text-3xl text-primary mr-4" />,
+      link: "/home#skills",
+      icon: <ImCogs className="text-3xl  mr-4" />,
     },
     {
       name: "Projects",
-      link: "#projects",
-      icon: <ImEmbed2 className="text-3xl text-primary mr-4" />,
+      link: "/home#projects",
+      icon: <ImEmbed2 className="text-3xl  mr-4" />,
     },
     {
       name: "Contact",
-      link: "#contact",
-      icon: <ImPhone className="text-3xl text-primary mr-4" />,
+      link: "/home#contact",
+      icon: <ImPhone className="text-3xl  mr-4" />,
     },
   ];
   return <FloatingNav navItems={navItems} />;
