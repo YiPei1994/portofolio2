@@ -1,4 +1,4 @@
-import { TimelineType } from "@/services/about";
+import { TimelineType } from "@/services/myData";
 
 type TimeListProps = {
   time: TimelineType;

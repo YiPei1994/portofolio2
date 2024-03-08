@@ -4,8 +4,9 @@ import { HiChevronLeft } from "react-icons/hi2";
 import { HiChevronRight } from "react-icons/hi2";
 import Card from "./ui/Card";
 import { useTimeline } from "@/store/slideTimeline";
-import { timelines } from "@/services/about";
+import { timelines } from "@/services/myData";
 import TimeList from "./ui/TimeList";
+import SectionHeader from "./ui/SectionHeader";
 
 function About() {
   const { currentSlide, prevSlide, nextSlide } = useTimeline();
@@ -14,7 +15,7 @@ function About() {
   return (
     <section id="about" className="flex flex-col py-6">
       <header className="flex justify-center items-center flex-col  gap-4">
-        <h2 className="text-4xl text-center">
+        <h2 className="text-4xl">
           About <span className="text-primary ">Me</span>{" "}
         </h2>
         <p className="w-[90%] md:w-4/5 ">
@@ -52,7 +53,7 @@ function About() {
             style={{
               transform: `translateX(${105 * (time.id - currentSlide)}%)`,
             }}
-            className={`transition-all  duration-300 w-[350px] min-h-[380px]  h-auto absolute lg:mr-4`}
+            className={`transition-all  duration-300 w-[350px] min-h-[380px] xl:w-[380px]  h-auto absolute lg:mr-4`}
           >
             <TimeList time={time} />
           </Card>

@@ -1,11 +1,11 @@
 import React from "react";
-import { FloatingNav } from "./animated/floatingNav";
+
 import { ImHome3 } from "react-icons/im";
 import { ImUser } from "react-icons/im";
 import { ImCogs } from "react-icons/im";
 import { ImEmbed2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
-import { usePathname } from "next/navigation";
+import { FloatingNav } from "./animated/FloatingNav";
 
 function Navbar() {
   const navItems = [
