@@ -5,6 +5,7 @@ import Intro from "@/components/Intro";
 import Logo from "@/components/Logo";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
+import Reveal from "@/components/animated/Reveal";
 import { useDisplayNav } from "@/store/useNavDisplay";
 import { HiMiniBars4 } from "react-icons/hi2";
 import { HiOutlineXMark } from "react-icons/hi2";
@@ -26,9 +27,7 @@ function Homepage() {
       </header>
       <hr />
       <main className="max-w-screen-xl p-4 md:p-8 lg:p-12 m-auto">
-        <Intro />
-        <About />
-        <Skills />
+        <Intro /> <About /> <Skills />
       </main>
       <footer></footer>
     </>

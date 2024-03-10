@@ -5,6 +5,6 @@ type DisplayNav = {
 };
 
 export const useDisplayNav = create<DisplayNav>((set) => ({
-  displayNav: false,
+  displayNav: true,
   toggleDisplay: () => set((state) => ({ displayNav: !state.displayNav })),
 }));
