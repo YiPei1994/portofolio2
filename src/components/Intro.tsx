@@ -20,8 +20,8 @@ function Intro() {
     },
   ];
   return (
-    <section className="h-fix min-h-[25rem] w-full  flex flex-col md:flex-row md:items-center md:justify-center  bg-grid-white/[0.02] relative overflow-hidden  m-auto py-6">
-      <div className=" max-w-7xl  mx-auto relative z-6 md:w-3/5 w-full pt-10 md:pt-0">
+    <section className="h-fix min-h-[25rem] xl:min-h-[70vh] w-full  flex flex-col md:flex-row md:items-center md:justify-center  bg-grid-white/[0.02] relative overflow-hidden  m-auto py-6">
+      <div className=" max-w-7xl  mx-auto relative z-6 md:w-3/5 w-full pt-5 lg:pt-10 md:pt-0">
         <h1 className="text-4xl  md:text-7xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           <TypewriterEffectSmooth className=" text-left" words={words} />
           <span className="text-2xl">software developer</span> <br />

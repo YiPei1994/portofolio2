@@ -82,3 +82,10 @@ export const publicProjects = [
     gitHubLink: "https://www.github.com",
   },
 ];
+
+export const hobbies = [
+  "Gym/exercise",
+  "attending Stand-up comedy",
+  "Reading books/manga",
+  "Watching anime/movie",
+];

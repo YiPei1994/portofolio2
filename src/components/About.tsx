@@ -8,6 +8,7 @@ import { timelines } from "@/services/myData";
 import TimeList from "./ui/TimeList";
 import Hobbies from "./Hobbies";
 import SectionHeader from "./ui/SectionHeader";
+import Reveal from "./animated/Reveal";
 
 function About() {
   const { currentSlide, prevSlide, nextSlide } = useTimeline();
@@ -16,27 +17,28 @@ function About() {
   return (
     <section
       id="about"
-      className="flex flex-col py-6 lg:flex-row lg:bg-neutral-900/10 lg:p-4 lg:gap-6"
+      className="flex flex-col py-6 lg:flex-row  lg:p-4 lg:gap-6"
     >
       <header className="flex justify-center items-center flex-col  gap-4 lg:justify-start lg:items-start lg:w-2/5">
         <h2 className="text-4xl lg:text-left">
           About <span className="text-primary ">Me</span>{" "}
         </h2>
+
         <p className="w-[90%] md:w-4/5 ">
           Since childhood, my passion for technology has been unwavering.
           Despite choosing the wrong educational path in my teens, I
           rediscovered my love for computers after university. Now, with
           <span className="text-primary uppercase"> c</span>onsistency,{" "}
           <span className="text-primary uppercase"> d</span>edication and{" "}
-          <span className="text-primary uppercase"> d</span>iscipline, I
-          <span className="text-primary"> &#39;</span>m determined to pursue my
-          passion wholeheartedly.
+          <span className="text-primary uppercase"> d</span>iscipline, I&#39;m
+          determined to pursue my passion wholeheartedly.
         </p>
-        <Card className="w-[350px] lg:ml-0">
-          <Hobbies />
+
+        <Card className="w-[350px] lg:w-[400px] lg:ml-0">
+          <Hobbies>Other than coding</Hobbies>
         </Card>
       </header>
-      <div className="lg:w-3/5 ">
+      <div className="lg:w-3/5 lg:flex lg:flex-col gap-10 items-center justify-center">
         <div className="flex items-center gap-4 py-6 justify-center w-full lg:flex">
           <button
             className="text-primary text-2xl disabled:text-accent"

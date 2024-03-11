@@ -1,30 +1,46 @@
-function Hobbies() {
-  return (
-    <div className="p-4 flex flex-col">
-      <h6>
-        <span className="text-[#a855f7]">class</span>
-        <span className="text-[#eab308]"> hobbies &#123;</span>
-      </h6>
-      <ul>
-        <span className="text-[#0ea5e9] pl-4">
-          constructor <span className="text-[#a855f7]">() &#123;</span>
-        </span>
-        <li className="pl-8">
-          <span className="text-[#ef4444] ">this</span>.hobbyOne=
-          &quot;Gym&quot;
-        </li>
-        <li className="pl-8">
-          <span className="text-[#ef4444] ">this</span>.hobbyTwo=&quot; Stand-up
-          comedy&quot;
-        </li>
-        <li className="pl-8">
-          <span className="text-[#ef4444]">this</span>.hobbyThree=&quot;
-          Reading&quot;
-        </li>
+import { hobbies } from "@/services/myData";
+import { ReactNode } from "react";
 
-        <span className="text-[#a855f7] pl-3"> &#x2775;</span>
+type HobbiesProps = {
+  children: ReactNode;
+};
+
+function Hobbies({ children }: HobbiesProps) {
+  return (
+    <div className="py-6 my-4 w-full md:m-auto scrollbar-thin h-fit overflow-auto">
+      <p className="text-[#06b6d4] pl-4">
+        &#60;<span className="text-[#ef4444]">aside</span>&#62;
+      </p>
+      <p className="text-[#06b6d4] pl-8">
+        &#60;<span className="text-[#ef4444]">div</span>&#62;
+      </p>
+      <p className="text-[#06b6d4] pl-12">
+        &#60;<span className="text-[#ef4444]">h3</span>&#62;
+        <span className="text-white">{children}</span>
+        &#60;/<span className="text-[#ef4444]">h3</span>&#62;
+      </p>
+      <p className="text-[#06b6d4] pl-12">
+        &#60;<span className="text-[#ef4444]">ul</span>&#62;
+      </p>
+      <ul>
+        {hobbies.map((hobby) => (
+          <li className="pl-16 text-[#06b6d4]" key={hobby}>
+            {" "}
+            &#60;<span className="text-[#ef4444] ">li</span>&#62;{" "}
+            <span className="text-white">{hobby}</span> &#60;/
+            <span className="text-[#ef4444] ">li</span>&#62;{" "}
+          </li>
+        ))}
       </ul>
-      <span className="text-[#eab308]"> &#x2775;</span>
+      <p className="text-[#06b6d4] pl-12">
+        &#60;/<span className="text-[#ef4444]">ul</span>&#62;
+      </p>
+      <p className="text-[#06b6d4] pl-8">
+        &#60;/<span className="text-[#ef4444]">div</span>&#62;
+      </p>
+      <p className="text-[#06b6d4] pl-4">
+        &#60;/<span className="text-[#ef4444]">aside</span>&#62;
+      </p>
     </div>
   );
 }
