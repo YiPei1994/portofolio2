@@ -8,8 +8,7 @@ import { ImPhone } from "react-icons/im";
 
 import Link from "next/link";
 import { useDisplayNav } from "@/store/useNavDisplay";
-import { Button } from "./ui/button";
-import { FloatingNav } from "./animated/FloatingNav";
+import { FloatingNav } from "./animated/floatingNav";
 
 function Navbar() {
   const { displayNav, toggleDisplay } = useDisplayNav();
