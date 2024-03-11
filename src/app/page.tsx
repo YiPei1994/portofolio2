@@ -1,12 +1,14 @@
 "use client";
 
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Intro from "@/components/Intro";
 import Logo from "@/components/Logo";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { TracingBeam } from "@/components/animated/ChasingStar";
+import Reveal from "@/components/animated/Reveal";
 
 import { useDisplayNav } from "@/store/useNavDisplay";
 import { HiMiniBars4 } from "react-icons/hi2";
@@ -30,9 +32,20 @@ export default function Home() {
       <TracingBeam>
         <main className="p-4 md:p-8 lg:p-12 m-auto">
           <Intro />
-          <About />
-          <Skills />
-          <Projects />
+          <Reveal>
+            <About />
+          </Reveal>
+          <Reveal>
+            {" "}
+            <Skills />
+          </Reveal>
+          <Reveal>
+            {" "}
+            <Projects />
+          </Reveal>
+          <Reveal>
+            <Contact />
+          </Reveal>
         </main>
       </TracingBeam>
       <footer></footer>

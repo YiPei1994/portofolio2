@@ -36,13 +36,13 @@ function Reveal({ children, width }: RevealProps) {
         {" "}
         {children}
       </motion.div>
-      <motion.div
+      {/*       <motion.div
         variants={{ hidden: { left: 0 }, visible: { left: "100%" } }}
         initial="hidden"
         animate={sideControls}
         transition={{ duration: 0.3, ease: "easeIn" }}
         className="absolute top-1 bottom-1 left-0 right-0 bg-primary z-20"
-      ></motion.div>
+      ></motion.div> */}
     </div>
   );
 }

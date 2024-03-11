@@ -16,27 +16,27 @@ function Navbar() {
   const navItems = [
     {
       name: "Home",
-      link: "/home#intro",
+      link: "#intro",
       icon: <ImHome3 className="text-3xl  mr-4" />,
     },
     {
       name: "About",
-      link: "/home#about",
+      link: "#about",
       icon: <ImUser className="text-3xl  mr-4" />,
     },
     {
       name: "Skills",
-      link: "/home#skills",
+      link: "#skills",
       icon: <ImCogs className="text-3xl  mr-4" />,
     },
     {
       name: "Projects",
-      link: "/home#projects",
+      link: "#projects",
       icon: <ImEmbed2 className="text-3xl  mr-4" />,
     },
     {
       name: "Contact",
-      link: "/home#contact",
+      link: "#contact",
       icon: <ImPhone className="text-3xl  mr-4" />,
     },
   ];

@@ -13,7 +13,7 @@ function Card({ children, className, style }: CardProps) {
   return (
     <div
       className={cn(
-        "w-full m-auto border border-primary rounded-[10px] my-6 flex flex-col ",
+        "w-full m-auto border border-primary rounded-[10px] my-6 flex flex-col",
         className
       )}
       style={style}

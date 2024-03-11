@@ -25,7 +25,7 @@ export const TypewriterEffect = ({
   });
 
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope);
+  const isInView = useInView(scope, { once: true });
   useEffect(() => {
     if (isInView) {
       animate(
@@ -177,7 +177,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h- sm:h-6 xl:h-12 bg-primary mt-4",
+          "block rounded-sm w-[4px]  h-auto  bg-primary",
           cursorClassName
         )}
       ></motion.span>

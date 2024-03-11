@@ -6,9 +6,7 @@ type SectionHeaderProps = {
 
 function SectionHeader({ children }: SectionHeaderProps) {
   return (
-    <header className="flex justify-center items-center flex-col  gap-4 w-full">
-      {children}
-    </header>
+    <header className="text-4xl text-center mb-6 w-full">{children}</header>
   );
 }
 

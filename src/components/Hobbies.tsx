@@ -24,8 +24,7 @@ function Hobbies({ children }: HobbiesProps) {
       </p>
       <ul>
         {hobbies.map((hobby) => (
-          <li className="pl-16 text-[#06b6d4]" key={hobby}>
-            {" "}
+          <li className="pl-16 text-[#06b6d4] pr-4" key={hobby}>
             &#60;<span className="text-[#ef4444] ">li</span>&#62;{" "}
             <span className="text-white">{hobby}</span> &#60;/
             <span className="text-[#ef4444] ">li</span>&#62;{" "}
