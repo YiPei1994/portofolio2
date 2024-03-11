@@ -10,7 +10,7 @@ function Section({ children, id, className }: SectionProps) {
   return (
     <section
       className={cn(
-        "flex flex-col py-6 md:flex-row md:items-center md:justify-between md:flex-wrap md:w-[90%] m-auto lg:my-16 xl:my-24 lg:flex-nowrap lg:gap-6",
+        "flex flex-col p-4 md:p-8 lg:p-12   md:flex-row md:items-center md:justify-between md:flex-wrap  m-auto lg:my-16 xl:my-24 lg:flex-nowrap lg:gap-6",
         className
       )}
       id={id}

@@ -1,22 +1,17 @@
 import React from "react";
-import SectionHeader from "./ui/SectionHeader";
 import Card from "./ui/Card";
-import ProjectList from "./ProjectList";
 import Section from "./ui/Section";
+import { StickyScroll } from "./animated/StickyReveal";
+import { projects } from "@/services/myData";
 
 export default function Projects() {
   return (
     <>
       {" "}
       <Section id="projects">
-        <div className="lg:flex gap-2">
-          <Card>
-            <ProjectList> Projects used by others </ProjectList>
-          </Card>
-          <Card>
-            <ProjectList> Projects used by others </ProjectList>
-          </Card>
-        </div>
+        <Card className="w-[100%] md:w-[100%]">
+          <StickyScroll content={projects} />
+        </Card>
       </Section>
     </>
   );

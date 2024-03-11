@@ -5,9 +5,10 @@ import { motion, useInView, useAnimation } from "framer-motion";
 type RevealProps = {
   children: ReactNode;
   width?: "w-fit" | "w-full";
+  type: "text" | "block";
 };
 
-function Reveal({ children, width }: RevealProps) {
+function Reveal({ children, width, type }: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -36,13 +37,15 @@ function Reveal({ children, width }: RevealProps) {
         {" "}
         {children}
       </motion.div>
-      {/*       <motion.div
-        variants={{ hidden: { left: 0 }, visible: { left: "100%" } }}
-        initial="hidden"
-        animate={sideControls}
-        transition={{ duration: 0.3, ease: "easeIn" }}
-        className="absolute top-1 bottom-1 left-0 right-0 bg-primary z-20"
-      ></motion.div> */}
+      {type === "text" && (
+        <motion.div
+          variants={{ hidden: { left: 0 }, visible: { left: "100%" } }}
+          initial="hidden"
+          animate={sideControls}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          className="absolute top-1 bottom-1 left-0 right-0 bg-primary z-20"
+        ></motion.div>
+      )}
     </div>
   );
 }

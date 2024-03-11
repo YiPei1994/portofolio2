@@ -3,7 +3,7 @@ export type TimelineType = {
   type: string;
   name: string;
   description: string;
-  aquiredSkills: string[];
+  aquiredSkills?: string[];
   time: number;
 };
 
@@ -13,7 +13,7 @@ export const timelines = [
     type: "WorkExperience",
     name: "Virtual Zoom s.r.o",
     description: "front-end software developer",
-    aquiredSkills: ["Javascript", "PHP", "TypeScript"],
+    aquiredSkills: ["js", "PHP", "TypeScript"],
     time: 2022,
   },
   {
@@ -21,7 +21,7 @@ export const timelines = [
     type: "WorkExperience",
     name: "BIKE CHANG LONG s.r.o",
     description: "software testing",
-    aquiredSkills: ["HTML", "CSS", "Youtrack", "Git", "Postman"],
+    aquiredSkills: ["HTML", "CSS", "Git"],
     time: 2019,
   },
 
@@ -30,7 +30,7 @@ export const timelines = [
     type: "Education",
     name: "Metropolitan university Prague",
     description: "International business",
-    aquiredSkills: ["teamwork", "public relations"],
+
     time: 2015,
   },
 ];
@@ -64,28 +64,28 @@ export const freeTimeTools = [
   { toolNum: "toolTwo", name: "firebase" },
 ];
 
-export const publicProjects = [
-  {
-    name: "ReLink",
-    description:
-      "Easy to use, mobile friendly website app for change yourself to better version.",
-    usedTechs: ["react", "tailwind", "supabase", "typescript"],
-    webLink: "https://www.google.com",
-    gitHubLink: "https://www.github.com",
-  },
-  {
-    name: "iYummy",
-    description:
-      "Easy to use, mobile friendly website app for self order and convient.",
-    usedTechs: ["react", "tailwind", "supabase", "typescript"],
-    webLink: "https://www.google.com",
-    gitHubLink: "https://www.github.com",
-  },
-];
-
 export const hobbies = [
   "Gym/exercise",
   "attending Stand-up comedy",
   "Reading books/manga",
   "Watching anime/movie",
+];
+
+export const projects = [
+  {
+    title: "ReLink",
+    description:
+      "Easy to use, mobile friendly website app for change yourself to better version.",
+    usedTechs: ["react", "tailwind", "supabase", "typescript"],
+    web: "https://www.google.com/",
+    github: "https://github.com/",
+  },
+  {
+    title: "iYummy",
+    description:
+      "Easy to use, mobile friendly website app for self order and convient.",
+    usedTechs: ["react", "tailwind", "supabase", "typescript"],
+    web: "https://www.google.com/",
+    github: "https://github.com/",
+  },
 ];

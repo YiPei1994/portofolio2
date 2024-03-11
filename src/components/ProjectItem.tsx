@@ -18,7 +18,7 @@ function ProjectItem({ item }: ProjectItemsProps) {
   return (
     <div className="text-[#06b6d4] pl-20 max-w-[500px]">
       &#60;<span className="text-[#ef4444] ">li</span>&#62;
-      <div className="text-white flex flex-col items-start  gap-2 px-1 my-2">
+      <div className="text-[#e2e8f0] flex flex-col items-start  gap-2 px-1 my-2">
         <div className="flex justify-between items-center gap-4 w-4/5">
           {" "}
           <span className="block">Project {item.name}:</span>

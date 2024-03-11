@@ -1,4 +1,5 @@
 import { TimelineType } from "@/services/myData";
+import Image from "next/image";
 
 type TimeListProps = {
   time: TimelineType;
@@ -29,12 +30,15 @@ function TimeList({ time }: TimeListProps) {
         <li className="pl-8 flex flex-wrap">
           <span className="text-[#ef4444] ">this</span>.aquiredSkills=
           <span className="text-[#eab308]">[</span>
-          {time.aquiredSkills.map((skill, i) => (
-            <span key={skill}>
-              &quot;{skill}&quot;
-              {time.aquiredSkills.length - 1 !== i && ","}
-              {""}
-            </span>
+          {time.aquiredSkills?.map((tech, i) => (
+            <Image
+              key={i}
+              className="inline-block mx-2"
+              src={`/skills/${tech}.png`}
+              width={24}
+              height={24}
+              alt={`${tech}Icon`}
+            />
           ))}
           <span className="text-[#eab308]">]</span>
         </li>

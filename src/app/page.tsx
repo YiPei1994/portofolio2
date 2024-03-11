@@ -18,7 +18,7 @@ export default function Home() {
   const { displayNav, toggleDisplay } = useDisplayNav();
   return (
     <>
-      <header className="relative w-full flex items-center justify-between p-4 flex-wrap lg:flex-nowrap">
+      <header className="relative w-full flex items-center justify-between p-4 flex-wrap lg:flex-nowrap border border-b-neutral-900">
         <Logo />
         <button className="text-xl lg:hidden" onClick={() => toggleDisplay()}>
           {displayNav ? (
@@ -27,23 +27,24 @@ export default function Home() {
             <HiOutlineXMark className="text-primary" />
           )}
         </button>
+
         <Navbar />
       </header>
       <TracingBeam>
-        <main className="p-4 md:p-8 lg:p-12 m-auto">
+        <main>
           <Intro />
-          <Reveal>
+          <Reveal type="block">
             <About />
           </Reveal>
-          <Reveal>
+          <Reveal type="block">
             {" "}
             <Skills />
           </Reveal>
-          <Reveal>
+          <Reveal type="block">
             {" "}
             <Projects />
           </Reveal>
-          <Reveal>
+          <Reveal type="block">
             <Contact />
           </Reveal>
         </main>

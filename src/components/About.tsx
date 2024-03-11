@@ -17,19 +17,31 @@ function About() {
 
   return (
     <>
-      <Section id="about">
+      <Section id="about" className="bg-[#e2e8f0] text-[#27272a]">
         <div className="flex justify-center items-center flex-col   gap-4 md:items-start  md:flex-row lg:justify-start lg:items-start lg:w-min lg:flex-col">
-          <p className="w-[90%] md:w-3/5 md:mt-6 lg:w-full">
-            Since childhood, my passion for technology has been unwavering.
-            Despite choosing the wrong educational path in my teens, I
-            rediscovered my love for computers after university. Now, with
-            <span className="text-primary uppercase"> c</span>onsistency,{" "}
-            <span className="text-primary uppercase"> d</span>edication and{" "}
-            <span className="text-primary uppercase"> d</span>iscipline, I&#39;m
-            determined to pursue my passion wholeheartedly.
-          </p>
+          <div className="w-[90%] md:w-3/5 md:mt-6 lg:w-full">
+            <Reveal type="text">
+              <h4 className="text-4xl mb-2">
+                Know who i <span className="text-primary uppercase">am</span>{" "}
+              </h4>
+            </Reveal>
+            <Reveal type="text">
+              <p>
+                Since childhood, my passion for technology has been unwavering.
+                Despite choosing the wrong educational path in my teens, I
+                rediscovered my love for computers after university. Now, with
+                <span className="text-primary uppercase">
+                  {" "}
+                  c
+                </span>onsistency,{" "}
+                <span className="text-primary uppercase"> d</span>edication and{" "}
+                <span className="text-primary uppercase"> d</span>iscipline,
+                I&#39;m determined to pursue my passion wholeheartedly.
+              </p>
+            </Reveal>
+          </div>
 
-          <Card className="w-max max-w-[400px] lg:ml-0">
+          <Card className="lg:ml-0">
             <Hobbies>Other than coding</Hobbies>
           </Card>
         </div>
@@ -37,7 +49,7 @@ function About() {
         <div className="lg:flex lg:flex-col gap-10 items-center justify-center w-full">
           <div className="flex items-center gap-4 py-6 justify-center w-full lg:flex">
             <button
-              className="text-primary text-2xl disabled:text-accent"
+              className="text-primary text-2xl font-bold disabled:opacity-0"
               disabled={currentSlide === 0}
               onClick={prevSlide}
             >
@@ -45,7 +57,7 @@ function About() {
             </button>
             <h6 className="text-2xl">Timeline</h6>
             <button
-              className="text-primary text-2xl disabled:text-accent "
+              className="text-primary font-bold text-2xl disabled:opacity-0 "
               disabled={currentSlide === slideLength - 1}
               onClick={nextSlide}
             >
@@ -59,7 +71,7 @@ function About() {
                 style={{
                   transform: `translateX(${105 * (time.id - currentSlide)}%)`,
                 }}
-                className={`transition-all  duration-300  min-h-[380px] w-max max-w-[400px]  h-auto absolute lg:mr-4 ${
+                className={`transition-all  duration-300  min-h-[380px]   h-auto absolute lg:mr-4 ${
                   time.id - currentSlide < 0 ? "opacity-0" : ""
                 }`}
               >

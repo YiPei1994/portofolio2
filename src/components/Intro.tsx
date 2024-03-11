@@ -9,11 +9,11 @@ function Intro() {
   const words = [
     {
       text: "Hi,",
-      className: "text-4xl  md:text-7xl font-bold text-white",
+      className: "text-4xl  md:text-7xl font-bold text-[#e2e8f0]",
     },
     {
       text: "I'm",
-      className: "text-4xl  md:text-7xl font-bold text-white",
+      className: "text-4xl  md:text-7xl font-bold text-[#e2e8f0]",
     },
     {
       text: "Yi Pei Zhu",

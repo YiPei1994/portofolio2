@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 
-import { publicProjects } from "@/services/myData";
 import ProjectItem from "./ProjectItem";
 
 type ProjectListProps = {
@@ -18,7 +17,7 @@ export default function ProjectList({ children }: ProjectListProps) {
       </p>
       <p className="text-[#06b6d4] pl-12">
         &#60;<span className="text-[#ef4444]">h3</span>&#62;
-        <span className="text-white">{children}</span>
+        <span className="text-#e2e8f0">{children}</span>
         &#60;/<span className="text-[#ef4444]">h3</span>&#62;
       </p>
       <p className="text-[#06b6d4] pl-12">

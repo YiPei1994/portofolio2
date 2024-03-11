@@ -81,7 +81,7 @@ export const TracingBeam = ({
                   ? "white"
                   : "hsl(var(--primary-foreground))",
             }}
-            className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
+            className="h-2 w-2  rounded-full border border-neutral-300 bg-primary"
           />
         </motion.div>
         <svg
