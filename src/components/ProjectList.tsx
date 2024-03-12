@@ -23,9 +23,6 @@ export default function ProjectList({ children }: ProjectListProps) {
       <p className="text-[#06b6d4] pl-12">
         &#60;<span className="text-[#ef4444]">ul</span>&#62;
       </p>
-      {publicProjects.map((project) => (
-        <ProjectItem key={project.name} item={project} />
-      ))}
 
       <p className="text-[#06b6d4] pl-12">
         &#60;/<span className="text-[#ef4444]">ul</span>&#62;
