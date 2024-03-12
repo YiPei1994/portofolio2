@@ -1,9 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import dev from "../../public/storyset_me.svg";
 import { TypewriterEffectSmooth } from "./animated/Typing";
 import Section from "./ui/Section";
+import { BackgroundBeams } from "./animated/BackgroundBeams";
 
 function Intro() {
   const words = [
@@ -37,8 +37,8 @@ function Intro() {
           </a>
         </button>
       </div>
-      <div className="absolute right-0 top-48  md:w-[300px] w-[225px] lg:w-[400px] xl:w-max lg:top-36 xl:top-24">
-        <Image src={dev} alt="dev" />
+      <div className="absolute right-0 top-48 h-fit md:w-[300px] w-[225px] lg:w-[400px] xl:w-max lg:top-36 xl:top-24">
+        <Image priority src={dev} alt="dev" />
       </div>
     </Section>
   );
