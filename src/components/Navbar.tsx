@@ -77,7 +77,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <button className="bg-primary rounded-[5px] py-2 px-4">
+            <button className="bg-primary rounded-[10px] py-2 px-4">
               <Link onClick={toggleDisplay} href="#contact">
                 Contact
               </Link>

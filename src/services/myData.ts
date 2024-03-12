@@ -13,7 +13,7 @@ export const timelines = [
     type: "WorkExperience",
     name: "Virtual Zoom s.r.o",
     description: "front-end software developer",
-    aquiredSkills: ["js", "PHP", "TypeScript"],
+    aquiredSkills: ["js", "PHP", "TypeScript", "react"],
     time: 2022,
   },
   {
@@ -30,7 +30,7 @@ export const timelines = [
     type: "Education",
     name: "Metropolitan university Prague",
     description: "International business",
-
+    aquiredSkills: ["thinking", "teamwork"],
     time: 2015,
   },
 ];
@@ -57,11 +57,13 @@ export const workTools = [
 export const freeTimeSkills = [
   { skillNum: "skillOne", name: "python" },
   { skillNum: "skillTwo", name: "sql" },
+  { skillNum: "skillThree", name: "native" },
 ];
 
 export const freeTimeTools = [
   { toolNum: "toolOne", name: "jest" },
   { toolNum: "toolTwo", name: "firebase" },
+  { toolNum: "toolThree", name: "expo" },
 ];
 
 export const hobbies = [

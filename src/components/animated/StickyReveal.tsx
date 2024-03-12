@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { MdWeb } from "react-icons/md";
 import { FaSquareGithub } from "react-icons/fa6";
+import Reveal from "./Reveal";
 
 export const StickyScroll = ({
   content,
@@ -61,14 +62,14 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] rounded-[10px] overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#0c0a09] flex justify-center relative space-x-10  p-10"
+      className="h-[30rem]  overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#0c0a09] flex justify-center relative space-x-10  p-10"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
-              <motion.h2
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -77,15 +78,17 @@ export const StickyScroll = ({
                 }}
                 className="text-2xl font-bold text-slate-100"
               >
-                <span className="text-[#06b6d4]">
-                  &#60;<span className="text-[#ef4444]">h2</span>&#62;
-                </span>
-                {item.title}
-                <span className="text-[#06b6d4]">
-                  &#60;/<span className="text-[#ef4444]">h2</span>&#62;
-                </span>
-              </motion.h2>
-              <motion.p
+                <Reveal type="text">
+                  <span className="text-[#06b6d4]">
+                    &#60;<span className="text-[#ef4444]">h2</span>&#62;
+                  </span>
+                  {item.title}
+                  <span className="text-[#06b6d4]">
+                    &#60;/<span className="text-[#ef4444]">h2</span>&#62;
+                  </span>
+                </Reveal>
+              </motion.div>
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -94,15 +97,17 @@ export const StickyScroll = ({
                 }}
                 className="text-kg text-slate-300 max-w-sm mt-10"
               >
-                <span className="text-[#06b6d4]">
-                  &#60;<span className="text-[#ef4444]">p</span>&#62;
-                </span>
-                {item.description}
-                <span className="text-[#06b6d4]">
-                  &#60;/<span className="text-[#ef4444]">p</span>&#62;
-                </span>
-              </motion.p>
-              <motion.p
+                <Reveal type="text">
+                  <span className="text-[#06b6d4]">
+                    &#60;<span className="text-[#ef4444]">p</span>&#62;
+                  </span>
+                  {item.description}
+                  <span className="text-[#06b6d4]">
+                    &#60;/<span className="text-[#ef4444]">p</span>&#62;
+                  </span>
+                </Reveal>
+              </motion.div>
+              <motion.div
                 initial={{
                   opacity: 0,
                 }}
@@ -121,7 +126,7 @@ export const StickyScroll = ({
                     alt={`${tech}Icon`}
                   />
                 ))}
-              </motion.p>
+              </motion.div>
               <motion.div
                 initial={{
                   opacity: 0,

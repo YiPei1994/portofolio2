@@ -21,7 +21,7 @@ function About() {
         <div className="flex justify-center items-center flex-col   gap-4 md:items-start  md:flex-row lg:justify-start lg:items-start lg:w-min lg:flex-col">
           <div className="w-[90%] md:w-3/5 md:mt-6 lg:w-full">
             <Reveal type="text">
-              <h4 className="text-4xl mb-2">
+              <h4 className="text-4xl mb-2 mt-6 lg:mb-6">
                 Know who i <span className="text-primary uppercase">am</span>{" "}
               </h4>
             </Reveal>

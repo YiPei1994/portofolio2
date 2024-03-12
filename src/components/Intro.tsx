@@ -30,8 +30,11 @@ function Intro() {
             &#123; Front-End &#x2775;
           </span>
         </h1>
-        <button className="bg-primary rounded-[5px] py-2 px-4 mt-10">
-          <Link href="#contact"> &#60;Contact / &#62; </Link>
+        <button className="bg-primary rounded-[10px] py-2 px-4 mt-10">
+          <a href="cv.pdf" target="_blank">
+            {" "}
+            &#60;My resume / &#62;{" "}
+          </a>
         </button>
       </div>
       <div className="absolute right-0 top-48  md:w-[300px] w-[225px] lg:w-[400px] xl:w-max lg:top-36 xl:top-24">
