@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar />
       </header>
       <TracingBeam>
-        <main>
+        <main className="py-10">
           <Intro />
           <Reveal type="block">
             <About />
@@ -49,7 +49,11 @@ export default function Home() {
           </Reveal>
         </main>
       </TracingBeam>
-      <footer></footer>
+      <hr />
+      <footer className="flex flex-col gap-2 justify-center items-center py-6">
+        <p className="text-sm">Created by Yi Pei Zhu.</p>
+        <p className="text-sm">Copyright © 2024 All Rights Reserved</p>
+      </footer>
     </>
   );
 }

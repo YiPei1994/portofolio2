@@ -7,7 +7,7 @@ type BlockProps = {
 
 function Block({ children, name }: BlockProps) {
   return (
-    <div>
+    <div className="ml-6">
       <span className="text-primary pl-4">function </span>
 
       <span className="text-[#0ea5e9] ">
