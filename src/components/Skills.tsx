@@ -11,7 +11,6 @@ import {
 import Section from "./ui/Section";
 import GitHubCalendar from "react-github-calendar";
 import { useEffect, useState } from "react";
-import { BackgroundBeams } from "./animated/BackgroundBeams";
 
 function Skills() {
   const [screenRef, setScreenRef] = useState(0);
@@ -107,7 +106,6 @@ function Skills() {
             />
           </div>
         </div>
-        <BackgroundBeams />
       </Section>
     </>
   );

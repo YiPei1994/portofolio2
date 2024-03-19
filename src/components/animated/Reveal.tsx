@@ -2,13 +2,15 @@
 
 import { ReactNode, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import { cn } from "@/lib/utils";
 type RevealProps = {
   children: ReactNode;
   width?: "w-fit" | "w-full";
   type: "text" | "block";
+  className?: string;
 };
 
-function Reveal({ children, width, type }: RevealProps) {
+function Reveal({ children, width, type, className }: RevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -23,7 +25,10 @@ function Reveal({ children, width, type }: RevealProps) {
   return (
     <div
       ref={ref}
-      className={`relative overflow-hidden  ${width ? "w-fit" : width}`}
+      className={cn(
+        `relative overflow-hidden  ${width ? "w-fit" : width}`,
+        className
+      )}
     >
       <motion.div
         variants={{

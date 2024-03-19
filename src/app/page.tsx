@@ -33,7 +33,7 @@ export default function Home() {
       <TracingBeam>
         <main className="py-10">
           <Intro />
-          <Reveal type="block">
+          <Reveal type="block" className="xl:overflow-visible">
             <About />
           </Reveal>
           <Reveal type="block">

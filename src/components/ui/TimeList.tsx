@@ -7,7 +7,7 @@ type TimeListProps = {
 
 function TimeList({ time }: TimeListProps) {
   return (
-    <div className="p-4 flex flex-col">
+    <div className="p-12 flex flex-col w-full">
       <h6>
         <span className="text-[#a855f7]">class</span>
         <span className="text-[#eab308]"> {time.type} &#123;</span>
