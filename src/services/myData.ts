@@ -75,12 +75,12 @@ export const hobbies = [
 
 export const projects = [
   {
-    title: "ReLink",
-    description:
-      "Easy to use, mobile friendly website app for change yourself to better version.",
-    usedTechs: ["react", "tailwind", "supabase", "typescript"],
-    web: "https://www.google.com/",
-    github: "https://github.com/",
+    title: "Honey Bee",
+    description: "Static website for local bee community.",
+    usedTechs: ["nextjs", "tailwind", "typescript", "figma"],
+    web: "https://honeybee-p6105zwal-yipei1994s-projects.vercel.app/",
+    github: "https://github.com/YiPei1994/honeybee",
+    content: "/projects/honeyBee.png",
   },
   {
     title: "iYummy",

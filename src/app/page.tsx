@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar />
       </header>
       <TracingBeam>
-        <main className="py-10">
+        <main>
           <Intro />
           <Reveal type="block" className="xl:overflow-visible">
             <About />
@@ -49,8 +49,8 @@ export default function Home() {
           </Reveal>
         </main>
       </TracingBeam>
-      <hr />
-      <footer className="flex flex-col gap-2 justify-center items-center py-6">
+
+      <footer className="flex flex-col gap-2 justify-center items-center py-6 mt-6 border border-t-slate-200/10">
         <p className="text-sm">Created by Yi Pei Zhu.</p>
         <p className="text-sm">Copyright © 2024 All Rights Reserved</p>
       </footer>

@@ -1,7 +1,5 @@
 import React, { ReactNode } from "react";
 
-import ProjectItem from "./ProjectItem";
-
 type ProjectListProps = {
   children: ReactNode;
 };

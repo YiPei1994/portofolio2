@@ -62,7 +62,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem]  overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#0c0a09] flex justify-center relative space-x-10  p-10"
+      className="h-[30rem]  overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-[#0c0a09] flex justify-center relative space-x-10  p-6"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
@@ -153,11 +153,18 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-[#e2e8f0] sticky top-10 overflow-hidden",
+          "hidden lg:flex items-center justify-center h-60 w-80 rounded-md bg-[#e2e8f0] sticky top-10 overflow-hidden ",
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        {content[activeCard].content && (
+          <Image
+            width={300}
+            height={300}
+            src={content[activeCard].content}
+            alt={content[activeCard].title}
+          />
+        )}
       </motion.div>
     </motion.div>
   );
