@@ -10,7 +10,6 @@ function Contact() {
     <Section id="contact">
       <SectionHeader>
         <Reveal type="text">
-          {" "}
           <MovingBorderWrap
             borderRadius="10px"
             containerClassName=" h-[60px] p-1  rounded-[10px] m-auto w-[250px]"

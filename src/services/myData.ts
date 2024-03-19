@@ -78,7 +78,7 @@ export const projects = [
     title: "Honey Bee",
     description: "Static website for local bee community.",
     usedTechs: ["nextjs", "tailwind", "typescript", "figma"],
-    web: "https://honeybee-p6105zwal-yipei1994s-projects.vercel.app/",
+    web: "https://honeybee-gilt.vercel.app/",
     github: "https://github.com/YiPei1994/honeybee",
     content: "/projects/honeyBee.png",
   },

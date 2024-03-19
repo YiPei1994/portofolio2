@@ -18,7 +18,7 @@ export default function Home() {
   const { displayNav, toggleDisplay } = useDisplayNav();
   return (
     <>
-      <header className="relative w-full flex items-center justify-between p-4 flex-wrap lg:flex-nowrap border border-b-neutral-900">
+      <header className="relative w-full flex items-center justify-between p-4 flex-wrap lg:flex-nowrap  border-t-slate-200/10">
         <Logo />
         <button className="text-xl lg:hidden" onClick={() => toggleDisplay()}>
           {displayNav ? (
@@ -30,9 +30,10 @@ export default function Home() {
 
         <Navbar />
       </header>
-      <TracingBeam>
-        <main>
-          <Intro />
+
+      <main>
+        <Intro />
+        <TracingBeam>
           <Reveal type="block" className="xl:overflow-visible">
             <About />
           </Reveal>
@@ -47,10 +48,10 @@ export default function Home() {
           <Reveal type="block">
             <Contact />
           </Reveal>
-        </main>
-      </TracingBeam>
+        </TracingBeam>
+      </main>
 
-      <footer className="flex flex-col gap-2 justify-center items-center py-6 mt-6 border border-t-slate-200/10">
+      <footer className="flex flex-col gap-2 justify-center items-center py-6 mt-6  border-t-slate-200/10">
         <p className="text-sm">Created by Yi Pei Zhu.</p>
         <p className="text-sm">Copyright © 2024 All Rights Reserved</p>
       </footer>
